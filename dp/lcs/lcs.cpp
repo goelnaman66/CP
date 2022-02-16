@@ -4,7 +4,7 @@ using namespace std;
 
 
 int dp[1001][1001];
-    int lcs(string s1, string s2, int i, int j){
+    int lcs(string &s1, string &s2, int i, int j){
         if(i==s1.size() or j==s2.size()){
             return 0;
         }
